@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML5 Elements and Forms</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    table, th, td {
+      border: 1px solid #000;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+    form {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <h2>I. Ordered List (Roman Numerals)</h2>
+  <ol type="I">
+    <li>Introduction to HTML</li>
+    <li>HTML Tags</li>
+    <li>HTML5 Semantic Elements</li>
+    <li>Forms and Inputs</li>
+    <li>Multimedia in HTML5</li>
+  </ol>
+
+  
+  <h2>II. External Image</h2>
+  <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg" alt="Office Setup" width="600">
+
+ 
+  <h2>III. Contacts Table</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Mobile</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>John Doe</td><td>123 Elm Street</td><td>123-456-7890</td><td>john@example.com</td></tr>
+      <tr><td>Jane Smith</td><td>456 Oak Avenue</td><td>987-654-3210</td><td>jane@example.com</td></tr>
+      <tr><td>Bob Lee</td><td>789 Pine Blvd</td><td>555-123-4567</td><td>bob@example.com</td></tr>
+      <tr><td>Alice Kim</td><td>321 Maple Drive</td><td>444-888-2222</td><td>alice@example.com</td></tr>
+      <tr><td>Mike Brown</td><td>654 Cedar Lane</td><td>333-666-9999</td><td>mike@example.com</td></tr>
+    </tbody>
+  </table>
+
+  <h2>IV. Registration Form</h2>
+  <form action="#" method="post">
+    
+  
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+    
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="example@domain.com" required><br><br>
+    
+    
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" placeholder="Enter password" minlength="6" required><br><br>
+
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob" required><br><br>
+
+    <label for="country">Country:</label><br>
+    <select id="country" name="country" required>
+      <option value="">--Select Country--</option>
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+      <option value="canada">Canada</option>
+    </select><br><br>
+
+    
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label><br><br>
+
+    
+    <label>Skills:</label><br>
+    <input type="checkbox" id="html" name="skills" value="HTML">
+    <label for="html">HTML</label>
+
+    <input type="checkbox" id="css" name="skills" value="CSS">
+    <label for="css">CSS</label>
+
+    <input type="checkbox" id="js" name="skills" value="JavaScript">
+    <label for="js">JavaScript</label><br><br>
+
+    
+    <input type="submit" value="Register">
+  </form>
+
+</body>
+</html>
